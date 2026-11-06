@@ -1,44 +1,82 @@
-# Mantine Vite template
+
+# Geriatric Care Assessment Form
+
+A responsive one-page assessment form for collecting geriatric patient information, clinical assessment details, follow-up dates, and consent.
+
+## Tech Stack
+
+- React 19
+- TypeScript
+- Mantine 9
+- Zod 4
+- Vite
+- Vitest and React Testing Library
 
 ## Features
 
-This template comes with the following features:
+- Patient information and clinical assessment fields
+- Schema-based validation using Zod
+- Validation on blur and form submission
+- Age eligibility validation (60 years and above)
+- Barthel Index validation (0–100, steps of 5)
+- Polypharmacy pharmacist-review validation
+- Follow-up date validation
+- Consent requirement
+- Load sample patient functionality
+- Simulated save with loading and success states
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Vite+](https://viteplus.dev/) unified toolchain: Vite, Vitest, Oxlint and Oxfmt are run with `vp` and configured in `vite.config.mjs`
+## Getting Started
 
-## Vite+ CLI
+Install dependencies:
 
-The template works without any global installation: `vp` is installed as a dev dependency and all npm scripts use it.
+```bash
+corepack yarn install
+```
 
-Optionally, you can install the [global `vp` CLI](https://viteplus.dev/guide/global-cli).
-It automatically switches to the Node.js version pinned in `.node-version` and lets you run commands directly, for example `vp dev` or `vp check --fix` instead of `yarn vp check --fix`.
+Start the development server:
 
-## npm scripts
+```bash
+corepack yarn dev
+```
 
-## Build and dev scripts
+## Testing
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `build:analyze` – build the app and open bundle size visualization (`dist/stats.html`)
-- `preview` – locally preview production build
+Run tests:
 
-### Testing scripts
+```bash
+corepack yarn vitest
+```
 
-- `check` – checks formatting, lint rules and TypeScript types with `vp check`
-- `check:fix` – same as `check`, fixes formatting and auto-fixable lint errors
-- `typecheck` – checks TypeScript types
-- `lint` – runs oxlint and stylelint
-- `format:test` – checks files with oxfmt
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `check`, `stylelint`, `vitest` and `build` scripts
+Run TypeScript checks:
 
-### Other scripts
+```bash
+corepack yarn typecheck
+```
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `format:write` – formats all files with oxfmt
+Create a production build:
+
+```bash
+corepack yarn build
+```
+
+## Project Structure
+
+```text
+src/
+  App.tsx
+  assessmentSchema.ts
+  App.test.tsx
+  assessmentSchema.test.ts
+  main.tsx
+```
+
+## Notes
+
+- All patient information used in the sample is fictional.
+- Saving is simulated on the client side; no backend or database is connected.
+- The project was developed as a time-boxed take-home assignment.
+- Future improvements could include backend integration, persistent storage, accessibility testing, and additional edge-case tests.
+
+## Time Spent
+
+Approximately [enter your actual development time].
