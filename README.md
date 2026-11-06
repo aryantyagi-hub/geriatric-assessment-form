@@ -79,4 +79,4 @@ src/
 
 ## Time Spent
 
-Approximately [enter your actual development time].
+Approximately 35 minutes
