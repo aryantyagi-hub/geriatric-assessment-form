@@ -7,7 +7,7 @@ A responsive one-page assessment form for collecting geriatric patient informati
 
 - React 19
 - TypeScript
-- Mantine 9
+- Mantine 9.7.5
 - Zod 4
 - Vite
 - Vitest and React Testing Library
@@ -44,7 +44,7 @@ corepack yarn dev
 Run tests:
 
 ```bash
-corepack yarn vitest
+corepack yarn vitest run
 ```
 
 Run TypeScript checks:
@@ -77,6 +77,15 @@ src/
 - The project was developed as a time-boxed take-home assignment.
 - Future improvements could include backend integration, persistent storage, accessibility testing, and additional edge-case tests.
 
+## Links
+
+- **Live Demo:** https://geriatric-assessment-form-seven.vercel.app/
+- **GitHub Repository:** https://github.com/aryantyagi-hub/geriatric-assessment-form
+
 ## Time Spent
 
+<<<<<<< Updated upstream
 Approximately 35 minutes
+=======
+Approximately 35 minutes.
+>>>>>>> Stashed changes
